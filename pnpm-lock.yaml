@@ -14,6 +14,9 @@ importers:
       ai:
         specifier: ^5.0.104
         version: 5.0.104(zod@4.1.13)
+      markdown-to-jsx:
+        specifier: ^9.2.0
+        version: 9.2.0(react@18.2.0)
       plasmo:
         specifier: 0.90.5
         version: 0.90.5(@swc/core@1.15.3(@swc/helpers@0.5.17))(@swc/helpers@0.5.17)(@types/node@20.11.5)(postcss@8.5.6)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -2429,6 +2432,18 @@ packages:
   make-dir@2.1.0:
     resolution: {integrity: sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==}
     engines: {node: '>=6'}
+
+  markdown-to-jsx@9.2.0:
+    resolution: {integrity: sha512-D7ZgL7MJ0XIWNTfmpZd+he99bl2cNb7iGoj4EzZZP5hC9UE2OklNWRLgzSHrgtSOJ8zAEv3z4IlHKlbH+lPBmQ==}
+    engines: {node: '>= 18'}
+    peerDependencies:
+      react: '>= 16.0.0'
+      react-native: '*'
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-native:
+        optional: true
 
   mdn-data@2.0.14:
     resolution: {integrity: sha512-dn6wd0uw5GsdswPFfsgMp5NSB0/aDe6fK94YJV/AJDYXL6HVLWBsxeq7js7Ad+mU2K9LAlwpk6kN2D5mwCPVow==}
@@ -5670,6 +5685,10 @@ snapshots:
       pify: 4.0.1
       semver: 5.7.2
     optional: true
+
+  markdown-to-jsx@9.2.0(react@18.2.0):
+    optionalDependencies:
+      react: 18.2.0
 
   mdn-data@2.0.14: {}
 
