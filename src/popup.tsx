@@ -30,7 +30,7 @@ function IndexPopup() {
         document.body?.innerText || document.documentElement?.innerText || ""
       if (!text) return ""
       // 简单的清理，减少 Token 消耗
-      return text.replace(/\s+/g, " ").trim().slice(0, 6000)
+      return text.replace(/\s+/g, " ").trim()
     } catch (e) {
       return ""
     }
